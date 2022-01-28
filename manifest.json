@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name" : "Keep it Focused",
+    "version": "1.0",
+    "description": "For when you need to really focus and stay motivated",
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*", "https://www.google.com/*", "https://csx.codesmith.io/*", "https://www.codesmith.io/*", "https://github.com/*", "https://stackoverflow.com/*", "https://developer.mozilla.org/*"],
+            "js": ["jquery.min.js", "./main.js"]
+        }
+    ],
+    "permissions": ["tabs", "activeTab"]
+}
